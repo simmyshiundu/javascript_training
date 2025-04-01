@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 56 (Task 2)</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sapiente autem illum labore eveniet qui saepe
+        sunt, aut facere nulla alias cum mollitia ipsum beatae repellendus natus quae, itaque est!</p>
+    <script>
+        /* 2.Given two strings str1 and str2, write a conditional statement that checks:
+                If str1 is longer than str2, print "str1 is longer".
+                If str2 is longer than str1, print "str2 is longer".
+                If both have equal length, print "Both are of equal length".
+         */
+
+        const str1 = prompt('enter string 1: ');
+        const str2 = prompt('enter string 2: ');
+
+        let str_length;
+        if (str1.length > str2.length) {
+            str_length = `${str1} is longer`;
+        } else if (str1.length < str2.length) {
+            str_length = `${str2} is longer`;
+        } else {
+            str_length = 'Both are of equal length';
+        }
+        console.log(str_length);
+    </script>
+</body>
+
+</html>

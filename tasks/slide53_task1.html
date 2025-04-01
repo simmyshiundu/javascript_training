@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 53 (Task 1)</title>
+</head>
+
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad quam sed quae quidem quo hic cum sint similique
+        magnam? Suscipit deleniti mollitia molestias aliquam ut laborum rerum, debitis assumenda nihil?</p>
+    <script>
+        /*  1. write a program that takes users age as input
+            if the age is 18 and above ,check if they have  drivers license if they do we print you are eligible to drive
+            if they dont have a drivers license print you are not eligible to drive
+            otherwise you are too young to drive */
+
+        let age = prompt('enter your age'); // data entered is a string
+        age = parseInt(age); // convert string to integer
+        if (age >= 18) {
+            let license = prompt('do you have a license? yes/no');
+            if (license === 'yes') {
+                console.log('you are eligible to drive');
+            } else {
+                console.log('not eligible to drive');
+            }
+        } else {
+            console.log('you are too young to drive');
+        }
+
+    </script>
+</body>
+
+</html>

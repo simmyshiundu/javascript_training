@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 55 (Task 1)</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, dicta, sequi reprehenderit harum molestiae totam
+        animi veniam magnam, quam iusto eos esse earum quibusdam provident deserunt quis eum sunt facilis!</p>
+    <script>
+        /* Write a program that:
+                Takes a transaction amount and account type ("Standard" or "Premium") as input.
+                If the account type is "Standard":, Check if the amount is above 500:
+                If it is, print "Transaction exceeds the limit for Standard accounts."
+                If not, print "Transaction approved."
+                If the account type is "Premium":, Check if the amount is above 1,000:
+                If it is, print "Transaction exceeds the limit for Premium accounts."
+                If not, print "Transaction approved."
+        */
+
+        const accountType1 = prompt('Enter account type (Standard/Premium): ');
+        const accountType = ["Standard", "Premium"];
+        const transactionAmount = parseInt(prompt('Enter transaction amount: '));
+
+        let message;
+
+        if (accountType1 === accountType[0]) {
+            if (transactionAmount > 500) {
+                message = "Transaction exceeds the limit for Standard accounts";
+            } else {
+                message = "Transaction approved";
+            }
+        } else if (accountType1 === accountType[1]) {
+            if (transactionAmount > 1000) {
+                message = "Transaction exceeds the limit for Premium accounts";
+            } else {
+                message = "Transaction approved";
+            }
+        } else {
+            message = "Invalid account type";
+        }
+
+        console.log(message);
+
+
+        // Another solution
+
+        const accountType2 = prompt('Enter account type (Standard/Premium): ').toLowerCase().trim();
+        const transactionAmount2 = parseInt(prompt('Enter transaction amount: '));
+
+        let message2;
+
+        if (accountType2 === "standard") {
+            if (transactionAmount2 > 500) {
+                message2 = "Transaction exceeds the limit for Standard accounts";
+            } else {
+                message2 = "Transaction approved";
+            }
+        } else if (accountType2 === "premium") {
+            if (transactionAmount2 > 1000) {
+                message2 = "Transaction exceeds the limit for Premium accounts";
+            } else {
+                message2 = "Transaction approved";
+            }
+        } else {
+            message2 = "Invalid account type";
+        }
+
+        console.log(message2);
+    </script>
+</body>
+
+</html>

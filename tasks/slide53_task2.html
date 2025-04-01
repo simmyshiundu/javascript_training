@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <title>Slide 53 (Task 2)</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi provident cumque itaque numquam enim repellat,
+        dignissimos vitae perspiciatis? Dolor at nihil ea atque accusantium sit eveniet nobis minus nemo perspiciatis.
+    </p>
+    <script>
+        /*  2. Write a program that:
+            = > Takes the user's credit score and annual income as input.
+            =>If the credit score is above 700, check if the income is above 50,000:
+            =>If both conditions are met, print "Loan approved."
+            =>If only the credit score is high, print "Income requirement not met."
+        */
+
+        let credit_score = parseInt(prompt('Enter credit score: '));
+
+        if (credit_score > 700) {
+            let annual_income = parseFloat(prompt('Enter annual income: '));
+            if (annual_income > 50000) {
+                console.log('Loan approved');
+            } else {
+                console.log('Income requirement not met');
+            }
+        } else {
+            console.log('Loan rejected');
+        }
+    </script>
+</body>
+
+</html>

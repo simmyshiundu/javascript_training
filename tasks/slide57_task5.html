@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 57 (Task 5)</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto, magnam debitis pariatur repudiandae quod
+        voluptates sint. Dolore, voluptatibus dicta. Doloremque nisi numquam, ipsam eum pariatur quos quibusdam quis
+        praesentium atque.</p>
+    <script>
+        /*  5. Given x = 7 and y = 14, write nested conditional statements that print:
+                    "x and y are both even" if both x and y are even numbers.
+                    "Only y is even" if only y is even.
+                    "Neither x nor y are even" if both are odd.
+         */
+
+        let x = 7;
+        let y = 14;
+        let z;
+
+        if (x % 2 === 0) {
+            if (y % 2 === 0) {
+                z = 'x and y are both even';
+            } else {
+                z = 'Only x is even';
+            }
+        } else if (y % 2 === 0) {
+            z = 'Only y is even';
+        } else {
+            z = 'Neither x nor y are even';
+        }
+
+        console.log(z);
+    </script>
+</body>
+
+</html>

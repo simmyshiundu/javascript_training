@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 57 (Task 4)</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa excepturi, tempore nisi debitis officiis earum
+        recusandae sed placeat aut molestias labore nemo blanditiis nulla repudiandae eveniet magnam quos ipsum
+        mollitia.</p>
+    <script>
+        /* 4.Given a variable value that could be of any type, write a conditional statement that:
+                        Prints "String Detected" if value is a string.
+                        Prints "Integer Detected" if value is an integer.
+                        Prints "Unknown Type" for any other type.
+         */
+
+        a = 54;
+        b = typeof a;
+
+        console.log(b);
+
+        let c;
+
+        if (b === 'string') {
+            c = 'String Detected';
+        } else if (b === 'number') {
+            c = 'Integer Detected';
+        } else {
+            c = 'Unknown Type';
+        }
+
+        console.log(c);
+    </script>
+</body>
+
+</html>

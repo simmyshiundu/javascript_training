@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 54 (Task 5)</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aperiam neque non expedita earum animi
+        repellendus quam minus dolore vel qui quia, ut perferendis sequi. Non quae magni delectus ad?</p>
+    <script>
+        /* 5. Write a Python program that checks if a variable student_score is greater than 90. If true, check if the 
+        attendance is greater than 80. If both conditions are true, print "Excellent student", otherwise print 
+        "Good score, but attendance needs improvement" */
+
+        let student_score = parseInt(prompt('Enter student score: '));
+        let attendance = parseInt(prompt('Enter attendance: '));
+
+        let stud_att;
+
+        if (student_score > 90) {
+            if (attendance > 80) {
+                stud_att = 'Excellent student';
+            } else {
+                stud_att = 'Good score, but attendance needs improvement';
+            }
+        } else {
+            stud_att = 'Bad score';
+        }
+
+        console.log(stud_att);
+    </script>
+</body>
+
+</html>

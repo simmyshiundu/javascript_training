@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 56 (Task 1)</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus iste dolores rem placeat fugit voluptatum rerum
+        repudiandae amet cumque nemo, eaque nisi unde quasi, delectus, numquam vero. Omnis, maiores voluptate.</p>
+    <script>
+        /*  1. Assume start_date = '2024-01-01' and end_date = '2024-12-31'. Write a conditional statement that checks:
+                    If start_date comes before end_date, print "Valid period",
+                    If start_date is after end_date, print "Invalid period".
+                    If both dates are the same, print "One-day period".
+         */
+
+        start_date = '2024-01-01';
+        end_date = '2024-12-31';
+
+        let date;
+        if (start_date < end_date) {
+            date = 'Valid period';
+        } else if (start_date > end_date) {
+            date = 'Invalid period';
+        } else {
+            date = 'One-day period';
+        }
+        console.log(date);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 54 (Task 1)</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugiat libero provident cumque nobis repellat
+        hic porro dicta. Voluptatum eos omnis deleniti aspernatur, dolor consequuntur dolorum perspiciatis debitis
+        laboriosam modi?</p>
+    <script>
+        /*  1. Take three inputs from a user, separately. Print the largest of the numbers.
+                    Hint: Determine what type of data is taken in as input.
+        */
+
+        const a = parseInt(prompt('enter first number: '));
+        const b = parseInt(prompt('enter second number: '));
+        const c = parseInt(prompt('enter third number: '));
+        let x;
+
+        if (a > b && a > c) {
+            x = `${a} is greater`;
+        } else if (b > a && b > c) {
+            x = `${b} is greater`;
+        } else {
+            x = `${c} is greater`;
+        }
+
+        console.log(x);
+    </script>
+</body>
+
+</html>
