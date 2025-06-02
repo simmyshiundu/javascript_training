@@ -19,8 +19,14 @@ function totalStock(products) {
         totalQuantity += quantity;
     }
     return totalQuantity;
+
+    // for (i = 1; i <= products.length; i++) {
+    //     let quantity = parseInt(i[2]);
+    //     totalQuantity += quantity;
+    // }
+    // return totalQuantity;
 }
 
-const prods = [['omo','30kshs','300'], ['milk','50kshs','200'],['bread','45kshs','359'], ['coffee','5kshs','79']];
-const totalQ = totalStock(prods);
+let prods = [['omo','30kshs','300'], ['milk','50kshs','200'],['bread','45kshs','359'], ['coffee','5kshs','79']];
+let totalQ = totalStock(prods);
 alert(`total stock: ${totalQ}`);

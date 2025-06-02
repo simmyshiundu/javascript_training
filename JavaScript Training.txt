@@ -1,0 +1,215 @@
+SIMMY@DESKTOP-CA3E2F3 MINGW64 /d/TECHCAMP CORNERHOUSE BUILDING/javascript_training (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.js
+        mydata.html
+        mydata.js
+        myinput.html
+        myinput.js
+        tasks/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+SIMMY@DESKTOP-CA3E2F3 MINGW64 /d/TECHCAMP CORNERHOUSE BUILDING/javascript_training (master)
+$ git add tasks
+
+SIMMY@DESKTOP-CA3E2F3 MINGW64 /d/TECHCAMP CORNERHOUSE BUILDING/javascript_training (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   tasks/slide53_task1.html
+        new file:   tasks/slide53_task2.html
+        new file:   tasks/slide54_task1.html
+        new file:   tasks/slide54_task2.html
+        new file:   tasks/slide54_task3.html
+        new file:   tasks/slide54_task4.html
+        new file:   tasks/slide54_task5.html
+        new file:   tasks/slide55_task1.html
+        new file:   tasks/slide56_task1.html
+        new file:   tasks/slide56_task2.html
+        new file:   tasks/slide57_task3.html
+        new file:   tasks/slide57_task4.html
+        new file:   tasks/slide57_task5.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.js
+        mydata.html
+        mydata.js
+        myinput.html
+        myinput.js
+
+
+SIMMY@DESKTOP-CA3E2F3 MINGW64 /d/TECHCAMP CORNERHOUSE BUILDING/javascript_training (master)
+$ git commit -m "tasks from slide 53 to slide 57"
+[master f759b45] tasks from slide 53 to slide 57
+ 13 files changed, 496 insertions(+)
+ create mode 100644 tasks/slide53_task1.html
+ create mode 100644 tasks/slide53_task2.html
+ create mode 100644 tasks/slide54_task1.html
+ create mode 100644 tasks/slide54_task2.html
+ create mode 100644 tasks/slide54_task3.html
+ create mode 100644 tasks/slide54_task4.html
+ create mode 100644 tasks/slide54_task5.html
+ create mode 100644 tasks/slide55_task1.html
+ create mode 100644 tasks/slide56_task1.html
+ create mode 100644 tasks/slide56_task2.html
+ create mode 100644 tasks/slide57_task3.html
+ create mode 100644 tasks/slide57_task4.html
+ create mode 100644 tasks/slide57_task5.html
+
+SIMMY@DESKTOP-CA3E2F3 MINGW64 /d/TECHCAMP CORNERHOUSE BUILDING/javascript_training (master)
+$ git push origin master
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (16/16), 7.94 KiB | 1016.00 KiB/s, done.
+Total 16 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/simmyshiundu/javascript_training.git
+   19ae690..f759b45  master -> master
+
+SIMMY@DESKTOP-CA3E2F3 MINGW64 /d/TECHCAMP CORNERHOUSE BUILDING/javascript_training (master)
+$
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SIMMY@DESKTOP-CA3E2F3 MINGW64 /d/TECHCAMP CORNERHOUSE BUILDING/javascript_training (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        JavaScript Training.txt
+        index.js
+        milestone_exercises/
+        myconditions.html
+        mydata.html
+        mydata.js
+        myinput.html
+        myinput.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+SIMMY@DESKTOP-CA3E2F3 MINGW64 /d/TECHCAMP CORNERHOUSE BUILDING/javascript_training (master)
+$ git add milestone_exercises
+
+SIMMY@DESKTOP-CA3E2F3 MINGW64 /d/TECHCAMP CORNERHOUSE BUILDING/javascript_training (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   milestone_exercises/task1.html
+        new file:   milestone_exercises/task1.js
+        new file:   milestone_exercises/task10.html
+        new file:   milestone_exercises/task10.js
+        new file:   milestone_exercises/task11.html
+        new file:   milestone_exercises/task11.js
+        new file:   milestone_exercises/task12.html
+        new file:   milestone_exercises/task12.js
+        new file:   milestone_exercises/task13.html
+        new file:   milestone_exercises/task13.js
+        new file:   milestone_exercises/task14.html
+        new file:   milestone_exercises/task14.js
+        new file:   milestone_exercises/task15_to_task20.html
+        new file:   milestone_exercises/task15_to_task20.js
+        new file:   milestone_exercises/task2.html
+        new file:   milestone_exercises/task2.js
+        new file:   milestone_exercises/task3.html
+        new file:   milestone_exercises/task3.js
+        new file:   milestone_exercises/task4.html
+        new file:   milestone_exercises/task4.js
+        new file:   milestone_exercises/task5.html
+        new file:   milestone_exercises/task5.js
+        new file:   milestone_exercises/task6.html
+        new file:   milestone_exercises/task6.js
+        new file:   milestone_exercises/task7.html
+        new file:   milestone_exercises/task7.js
+        new file:   milestone_exercises/task8.html
+        new file:   milestone_exercises/task8.js
+        new file:   milestone_exercises/task9.html
+        new file:   milestone_exercises/task9.js
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        JavaScript Training.txt
+        index.js
+        myconditions.html
+        mydata.html
+        mydata.js
+        myinput.html
+        myinput.js
+
+
+SIMMY@DESKTOP-CA3E2F3 MINGW64 /d/TECHCAMP CORNERHOUSE BUILDING/javascript_training (master)
+$ git commit -m "programming basics tasks (task1 to task20)"
+[master 1bb864d] programming basics tasks (task1 to task20)
+ 30 files changed, 637 insertions(+)
+ create mode 100644 milestone_exercises/task1.html
+ create mode 100644 milestone_exercises/task1.js
+ create mode 100644 milestone_exercises/task10.html
+ create mode 100644 milestone_exercises/task10.js
+ create mode 100644 milestone_exercises/task11.html
+ create mode 100644 milestone_exercises/task11.js
+ create mode 100644 milestone_exercises/task12.html
+ create mode 100644 milestone_exercises/task12.js
+ create mode 100644 milestone_exercises/task13.html
+ create mode 100644 milestone_exercises/task13.js
+ create mode 100644 milestone_exercises/task14.html
+ create mode 100644 milestone_exercises/task14.js
+ create mode 100644 milestone_exercises/task15_to_task20.html
+ create mode 100644 milestone_exercises/task15_to_task20.js
+ create mode 100644 milestone_exercises/task2.html
+ create mode 100644 milestone_exercises/task2.js
+ create mode 100644 milestone_exercises/task3.html
+ create mode 100644 milestone_exercises/task3.js
+ create mode 100644 milestone_exercises/task4.html
+ create mode 100644 milestone_exercises/task4.js
+ create mode 100644 milestone_exercises/task5.html
+ create mode 100644 milestone_exercises/task5.js
+ create mode 100644 milestone_exercises/task6.html
+ create mode 100644 milestone_exercises/task6.js
+ create mode 100644 milestone_exercises/task7.html
+ create mode 100644 milestone_exercises/task7.js
+ create mode 100644 milestone_exercises/task8.html
+ create mode 100644 milestone_exercises/task8.js
+ create mode 100644 milestone_exercises/task9.html
+ create mode 100644 milestone_exercises/task9.js
+
+SIMMY@DESKTOP-CA3E2F3 MINGW64 /d/TECHCAMP CORNERHOUSE BUILDING/javascript_training (master)
+$ git push origin master
+Enumerating objects: 34, done.
+Counting objects: 100% (34/34), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (33/33), done.
+Writing objects: 100% (33/33), 11.26 KiB | 886.00 KiB/s, done.
+Total 33 (delta 10), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (10/10), done.
+To https://github.com/simmyshiundu/javascript_training.git
+   f759b45..1bb864d  master -> master
+
+SIMMY@DESKTOP-CA3E2F3 MINGW64 /d/TECHCAMP CORNERHOUSE BUILDING/javascript_training (master)
+$
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Functions</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore debitis, assumenda dolore illum unde consectetur nihil. Magnam blanditiis porro aliquam voluptate laboriosam aut, qui culpa! Placeat aliquid rerum ratione est?</p>
+    <script>
+        // Function is a block of code that does a certain task e.g. login, logout, register...
+        // Takes in some data (parameter -> variable and argument -> value)
+        // Returns back a value.
+
+        // camelCase
+        function myCalculator(x, y) {
+            //console.log("Inside Function");
+            let sum = x + y;
+            return sum;
+        } 
+        //console.log(myCalculator());
+        let value1 = parseInt(prompt("Enter number one: "));
+        let value2 = parseInt(prompt("Enter number two: "));
+
+        let myc = myCalculator(value1, value2);
+        //console.log(myc);
+        alert(myc);
+    </script>    
+</body>
+</html>

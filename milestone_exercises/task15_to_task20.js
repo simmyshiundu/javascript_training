@@ -128,13 +128,13 @@ function calcPaye(taxInc) {
     if (taxInc <= 24000) {
         payeOutput = 0.1 * taxInc;
     } else if (taxInc > 24000 && taxInc <= 32333) {
-        payeOutput = (0.1 * taxInc) + (0.25 * (taxInc - 24000));
+        payeOutput = (0.1 * 24000) + (0.25 * (taxInc - 24000));
     } else if (taxInc > 32333 && taxInc <= 500000) {
-        payeOutput = (0.1 * taxInc) + (0.25 * (taxInc - 24000)) + (0.3 * (taxInc - 32333));
+        payeOutput = (0.1 * 24000) + (0.25 * 8333) + (0.3 * (taxInc - 32333));
     } else if (taxInc > 500000 && taxInc <= 800000) {
-        payeOutput = (0.1 * taxInc) + (0.25 * (taxInc - 24000)) + (0.3 * (taxInc - 32333)) + (0.325 * (taxInc - 500000));
+        payeOutput = (0.1 * 24000) + (0.25 * 8333) + (0.3 * 467667) + (0.325 * (taxInc - 500000));
     } else {
-        payeOutput = (0.1 * taxInc) + (0.25 * (taxInc - 24000)) + (0.3 * (taxInc - 32333)) + (0.325 * (taxInc - 500000)) + (0.35 * (taxInc - 800000));
+        payeOutput = (0.1 * 24000) + (0.25 * 8333) + (0.3 * 467667) + (0.325 * 300000) + (0.35 * (taxInc - 800000));
     }
     return payeOutput;
 }

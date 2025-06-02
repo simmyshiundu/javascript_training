@@ -30,6 +30,6 @@ function phoneNumber(phone_number) {
     return valid_p;
 }
 
-const phone_no = prompt('enter phone number: ');
-const phone_n = phoneNumber(phone_no);
+let phone_no = prompt('enter phone number: ');
+let phone_n = phoneNumber(phone_no);
 alert(phone_n);

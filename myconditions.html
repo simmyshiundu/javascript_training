@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Conditions</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic veniam delectus, magnam ratione vel laborum rem
+        neque aperiam eveniet? Eos, similique optio labore at soluta id aperiam officia aliquam recusandae!</p>
+    <script>
+        // Operators - Conditional (<,>,==,!==) and Logical (&&, ||)
+        // Operators above are meant to create for us a boolean e.g. True/False
+        // IF statements test booleans to make a decision.
+
+        let a = 10;
+        let b = 15;
+        let c = 20;
+
+        if (a > b) {
+            console.log("A is larger than B");
+        } else {
+            console.log("B is larger than A");
+        }
+
+        // Example of condition (typeOf(a) != Number)
+        if (a > 0 && b > 0 && c > 0) {
+            if (a > b && a > c) {
+                console.log("A is the largest");
+            } else if (b > a && b > c) {
+                console.log("B is the largest");
+            } else if (c > a && c > b) {
+                console.log("C is the largest");
+            } else {
+                console.log("The numbers are equal");
+            }
+        } else {
+            console.log("Invalid numbers");
+        } // Instead of typing a,b and c take them as input 
+
+    </script>
+</body>
+
+</html>

@@ -25,6 +25,6 @@ function studentGrade(studentMarks) {
     return grade;
 }
 
-const studMarks = parseInt(prompt('Enter student marks: '));
-const studGrade = studentGrade(studMarks);
+let studMarks = parseInt(prompt('Enter student marks: '));
+let studGrade = studentGrade(studMarks);
 alert(studGrade);

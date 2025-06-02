@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Forms</title>
+</head>
+<body>
+    <form action="" id="myForm">
+        <label for="">Full Name</label>
+        <input id="myFullName" type="text"><br>
+        <label for="">Email</label>
+        <input id="myEmail" type="email"><br>
+        <label for="">Phone Number</label>
+        <input id="myPhoneNumber" type="number"><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <span id="results"></span>
+
+    <script>
+        const form = document.getElementById("myForm");
+        let results = document.getElementById("results");
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const fullName = document.getElementById("myFullName").value;
+            const email = document.getElementById("myEmail").value;
+            const phoneNumber = document.getElementById("myPhoneNumber").value;
+
+            if (fullName == "" || email == "" || phoneNumber == "") {
+                //alert("Ensure all fields are set");
+                results.style.color = "red";
+                results.innerText = "Ensure all fields are set";
+            } else {
+                //alert(`fullName: ${fullName}, email: ${email}, phoneNumber: ${phoneNumber}`);
+                console.log(`fullName: ${fullName}, email: ${email}, phoneNumber: ${phoneNumber}`);
+                results.innerHTML = `fullName: ${fullName}, email: ${email}, phoneNumber: ${phoneNumber}`;
+            }           
+        });
+
+    </script>
+</body>
+</html>

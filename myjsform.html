@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My JavaScript Form</title>
+    <style>
+        table,th,td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th,td {
+            padding: 20px;
+        }
+        th {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui officia sunt inventore, mollitia vero tempore nam incidunt quos, ratione dignissimos facere, eveniet dicta vel consequuntur consectetur. Inventore sed voluptates ducimus?</p> -->
+    <form action="" id="myJSForm">
+        <label for="">First Name</label>
+        <input id="myFirstName" type="text"><br>
+        <label for="">Last Name</label>
+        <input id="myLastName" type="text"><br>
+        <label for="">Email</label>
+        <input id="myEmail" type="email"><br>
+        <button type="submit">Submit</button>
+    </form>
+    <span id="results"></span><br>
+    <table border="">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <td>Sharma</td>
+            <td>priyasharma@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Arun</td>
+            <td>Singh</td>
+            <td>arunsingh@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <td>Watson</td>
+            <td>samwaston@gmail.com</td>
+        </tr>
+    </table>
+    <script src="myjsform.js"></script>
+</body>
+</html>

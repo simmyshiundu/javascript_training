@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle</title>
+</head>
+<body>    
+    <form action="" id="myTriangle">
+        <label for="">Base</label>
+        <input id="myBase" type="number"><br>
+        <label for="">Height</label>
+        <input id="myHeight" type="number"><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <span id="results"></span>
+
+    <script>
+        const form = document.getElementById("myTriangle");
+        let results = document.getElementById("results");
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const base = document.getElementById("myBase").value;
+            const height = document.getElementById("myHeight").value;
+            const area_of_triangle = 0.5 * base * height;
+
+            if (base == "" || height == "") {
+                results.innerText = "Ensure all fields are set";
+            } else {
+                // base = parseFloat(base);
+                // height = parseFloat(height);
+                
+                console.log(`area of triangle: ${area_of_triangle}`);
+                results.innerHTML = `area of triangle: ${area_of_triangle}`;
+            }
+        });
+    </script>
+</body>
+</html>

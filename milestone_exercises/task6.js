@@ -21,3 +21,26 @@ for (let p = 0; p < attempts; p++) {
         }
     }
 }
+
+// function enterPassword(password) {
+//     let attempts = 4;
+
+//     for (let p = 0; p < attempts; p++) {
+//         const correct_password = "admin@123";
+//         // const password = prompt("enter password: ");
+//         if (password === correct_password) {
+//             alert("access is granted");
+//             break;
+//         } else {
+//             const remaining_attempts = attempts - (p + 1);
+//             if (remaining_attempts > 0) {
+//                 alert(`wrong password, you have ${remaining_attempts} attempts left`);
+//             } else {
+//                 alert("account is blocked");
+//             }
+//         }
+//     }
+// }
+
+// let password = prompt("enter password: ");
+// enterPassword(password);

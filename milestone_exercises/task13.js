@@ -6,14 +6,13 @@ Once you learn functions, revisit this and write this code inside a function.
 let tries = 3;
 
 for (let t = 0; t < tries; t++) {
-    let email = prompt('enter email: ');
-    let password = prompt('enter password: ');
-
+    const email = prompt('enter email: ');
+    const password = prompt('enter password: ');
     if (email === "admin@mail.com" && password === "Admin@123") {
         alert("Login is Successful");
         break;
     } else {
-        let remaining_tries = tries - (t + 1);
+        const remaining_tries = tries - (t + 1);
 
         if (remaining_tries > 0) {
             alert(`Invalid username or password, you have ${remaining_tries} tries left`);
@@ -22,3 +21,30 @@ for (let t = 0; t < tries; t++) {
         }
     }
 }
+
+// function checkEmailPassword(email, password) {
+//     let tries = 3;
+
+//     for (let t = 0; t < tries; t++) {
+//         // const email = prompt('enter email: ');
+//         // const password = prompt('enter password: ');
+//         if (email === "admin@mail.com" && password === "Admin@123") {
+//             alert("Login is Successful");
+//             break;
+//         } else {
+//             const remaining_tries = tries - (t + 1);
+
+//             if (remaining_tries > 0) {
+//                 alert(`Invalid username or password, you have ${remaining_tries} tries left`);
+//             } else {
+//                 alert("You have been blocked");
+//             }
+//         }
+//     }
+// }
+
+// let email = prompt('enter email: ');
+// let password = prompt('enter password: ');
+
+// alert(checkEmailPassword(email, password));
+// console.log(checkEmailPassword(email, password));

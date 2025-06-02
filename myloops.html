@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Loops</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis accusamus eligendi id ex deserunt iste eos quo qui ipsa doloremque nostrum neque consequatur molestias, cum nemo voluptatum magni repudiandae sunt?</p>
+    <script>
+        // Loops are used to iterate (repeat) a task you want to run a certain 
+        // number of times
+        // But majorly a loop is used to go through a list
+        // Also sending a request to the server e.g. every 5 seconds can be put in a loop with
+        // some delay. So you can delay a loop to run every number of seconds until its
+        // stopped.
+
+        let days = ["Mon","Tue","Wed","Thur","Fri","Sat","Sun"];
+
+        // Original Loop - Every browser i++ or i = i + 1. Power to work the element position.
+               
+        for(let i = 0; i < days.length; ++i) {
+            console.log(days[i]);
+        }
+
+        let res = [];
+        for (let i = 0; i < days.length; i++) {
+            if(i%2==0){
+                res.push(days[i]);
+            }
+        }
+        console.log(res);
+
+        // For Of Loop. Power to work with the element
+
+        for (const d of days) {
+            console.log(d);
+        }
+
+        // For Each Loop. Power to work with the element
+        days.forEach(day => {
+            console.log(day);
+        });
+
+        // Loop with delay
+        for (const d of days) {
+            setTimeout(function(){ console.log("Delayed-----" + d); }, 5000);
+        }
+    </script>
+</body>
+</html>
